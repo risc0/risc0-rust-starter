@@ -1,0 +1,10 @@
+[package]
+name = "risc0-rust-starter-methods-guest"
+version = "0.1.0"
+edition = "2021"
+
+[build-dependencies]
+risc0-build = "0.7.0-dev.1"
+
+[target.riscv32im-unknown-none-elf.dependencies]
+risc0-zkvm-guest = "0.7.0-dev.1"

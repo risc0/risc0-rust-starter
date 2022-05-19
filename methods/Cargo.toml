@@ -1,0 +1,10 @@
+[package]
+name = "risc0-rust-starter-methods-host"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "lib.rs"
+
+[build-dependencies]
+risc0-build = "0.7.0-dev.1"
