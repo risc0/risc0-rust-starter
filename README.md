@@ -22,7 +22,7 @@ cargo run --release
 
 # KNOWN ISSUES
 
-Changes to guest code (i.e. methods/guest/src/bin/multiply.rs) will not properly
+Changes to guest code (e.g. `methods/guest/src/bin/multiply.rs`) will not properly
 trigger cargo to rebuild.  One can 'poke' cargo by doing:
 
 ```
