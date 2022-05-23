@@ -1,5 +1,5 @@
 [package]
-name = "risc0-rust-starter-methods-host"
+name = "methods"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,4 +7,7 @@ edition = "2021"
 path = "lib.rs"
 
 [build-dependencies]
-risc0-build = "0.7.0-dev.1"
+risc0-build = "0.7.0-dev.2"
+
+[package.metadata.risc0]
+methods = ["guest"]

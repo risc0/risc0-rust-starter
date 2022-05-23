@@ -1,13 +1,6 @@
-[package]
-name = "risc0-rust-starter"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-risc0-rust-starter-methods-host = { path = "methods" }
-risc0-zkvm-core = "0.7.0-dev.1"
-risc0-zkvm-host = "0.7.0-dev.1"
-risc0-zkvm-serde = "0.7.0-dev.1"
-serde = "1.0"
-tempfile = "3.3"
-
+[workspace]
+members = [
+    "methods",
+    "risc0-build-methods",
+    "starter",
+]

@@ -1,3 +1,3 @@
 fn main() {
-    risc0_build::methods("guest", &["multiply"]);
+    risc0_build::embed_methods();
 }

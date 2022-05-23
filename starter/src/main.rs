@@ -1,18 +1,17 @@
-
-use risc0_zkvm_host::{Prover, Receipt, Result};
-use risc0_zkvm_serde::{from_slice, to_vec};
-use risc0_rust_starter_methods_host::methods::{MULTIPLY_PATH, MULTIPLY_ID};
 use std::fs;
-use tempfile::tempdir;
 
+use methods::{MULTIPLY_ID, MULTIPLY_PATH};
+use risc0_zkvm_host::Prover;
+use risc0_zkvm_serde::{from_slice, to_vec};
+use tempfile::tempdir;
 
 fn main() {
     // Pick two numbers
-    let a : u64 = 17;
-    let b : u64 = 23;
+    let a: u64 = 17;
+    let b: u64 = 23;
 
     // Write the ID to a file, this is to work around the fact that the C++
-    // prover API doesn't take ID's as buffers currently.
+    // prover API doesn't take IDs as buffers currently.
     let temp_dir = tempdir().unwrap();
     let id_path = temp_dir
         .path()
@@ -32,14 +31,13 @@ fn main() {
     let receipt = prover.run().unwrap();
 
     // Extract journal of receipt (i.e. output c, where c = a * b)
-    let c : u64 = from_slice(&receipt.get_journal_vec().unwrap()).unwrap();
+    let c: u64 = from_slice(&receipt.get_journal_vec().unwrap()).unwrap();
 
     // Print an assertation
     println!("I know the factors of {}, and I can prove it!", c);
-    
+
     // Here is where one would send 'receipt' over the network...
-    
+
     // Verify receipt, panic if it's wrong
     receipt.verify(&id_path).unwrap();
 }
-
