@@ -6,7 +6,7 @@ For more information, check out the [main risc0 repo](www.github.com/risc0/risc0
 
 # Quick Start
 
-Make sure you have [Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) installed and are using the [nightly](https://doc.rust-lang.org/book/appendix-07-nightly-rust.html) version of [Rust](https://doc.rust-lang.org/book/ch01-01-installation.html):
+Make sure you are using a [nightly](https://doc.rust-lang.org/book/appendix-07-nightly-rust.html) version of [Rust](https://doc.rust-lang.org/book/ch01-01-installation.html):
 
 ```
 rustup toolchain install nightly
