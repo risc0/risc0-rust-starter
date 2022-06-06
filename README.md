@@ -31,7 +31,7 @@ Instead of Cargo, you can also use the shell script `./zargo.sh`, which runs the
 
 The first `cargo run` command builds the methods required to launch the zkVM, including compiling [multiply.rs](https://github.com/risc0/risc0-rust-starter/blob/main/methods/guest/src/bin/multiply.rs) into a RISC-V ELF file and generating a MethodID to identify that ELF file. 
 
-The second `cargo run` command launches the zkVM. The host runs [main.rs](https://github.com/risc0/risc0-rust-starter/blob/main/starter/src/main.rs), which loads the ELF file, executes it, and generates a receipt that certifies that the integrity of the output. 
+The second `cargo run` command launches the zkVM. The host runs [main.rs](https://github.com/risc0/risc0-rust-starter/blob/main/starter/src/main.rs), which loads the ELF file, executes it, and generates a receipt that certifies the integrity of the output. 
 
 The rest of the repo is builld support. 
 
