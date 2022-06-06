@@ -12,7 +12,7 @@ Make sure you are using a [nightly](https://doc.rust-lang.org/book/appendix-07-n
 rustup toolchain install nightly
 rustup override set nightly
 ```
-To build all methods and execute a multiplication method within the zkVM, run either of the following options: 
+To build all methods and execute the method within the zkVM, run either of the following options: 
 
 ### Option A: Cargo Commands
 ```
