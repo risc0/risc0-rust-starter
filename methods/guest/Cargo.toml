@@ -8,5 +8,5 @@ edition = "2021"
 [build-dependencies]
 risc0-build = "0.7"
 
-[target.riscv32im-unknown-none-elf.dependencies]
+[dependencies]
 risc0-zkvm-guest = "0.7"
