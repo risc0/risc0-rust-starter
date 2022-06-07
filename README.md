@@ -16,7 +16,7 @@ To build all methods and execute the method within the zkVM, run either of the f
 
 ### Option A: Cargo Commands
 ```
-$ cargo run --bin risc0-build-methods && cargo run --release --bin starter
+cargo run --bin risc0-build-methods && cargo run --release --bin starter
 ```
 Unfortunately, Cargo doesn't properly support cross-target dependencies.
 
