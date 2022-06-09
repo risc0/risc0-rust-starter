@@ -261,22 +261,23 @@ checksum = "d34f1408f55294453790c48b2f1ebbb1c5b4b7563eb1f418bcfcfdbb06ebb4e7"
 
 [[package]]
 name = "risc0-build"
-version = "0.7.2"
+version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ae0f11c8270173f25d47a8e12a8546487b207b01400bf6b41ebbb124691d3c77"
+checksum = "962ba2b5ba0635f9def4ab025cb99762e60e39f644dc5c041b3852a3ff6bc874"
 dependencies = [
  "cargo_metadata",
  "risc0-zkvm-platform-sys",
  "risc0-zkvm-sys",
  "serde",
  "serde_json",
+ "sha2",
 ]
 
 [[package]]
 name = "risc0-core-sys"
-version = "0.7.2"
+version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2954d1dad9f0a5a890dd80543c857b7ebdf9588e68c624502963905d60d5d4fe"
+checksum = "cf64515674039bab3ef89ae776a915242c9a1a7f8cfce3ba9861ece201653cae"
 dependencies = [
  "cxx",
  "cxx-build",
@@ -284,9 +285,9 @@ dependencies = [
 
 [[package]]
 name = "risc0-zkp-core"
-version = "0.7.2"
+version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cdb17c0b3e46ecb92def57096d63ce7e2f0631427cc7dee022bdb74aa75d7292"
+checksum = "52c099b78dd9b8d630403ad0c718afc5210cd0711264eefdcd04a7d214cd84c6"
 dependencies = [
  "anyhow",
  "bytemuck",
@@ -298,9 +299,9 @@ dependencies = [
 
 [[package]]
 name = "risc0-zkp-sys"
-version = "0.7.2"
+version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c44b86faf3d800f2740c06e82ee854084096836c947b09bcc8803bcae7640080"
+checksum = "057086d2ac8d470ece21ee3980795f55526a9983e1c4d77440016f779c5ae5cd"
 dependencies = [
  "cxx",
  "cxx-build",
@@ -310,18 +311,18 @@ dependencies = [
 
 [[package]]
 name = "risc0-zkvm-circuit-gen"
-version = "0.7.2"
+version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1692d6e93a0f727f6773b09fe8b83c80289275190950f0fc1f6649f137f06eef"
+checksum = "96f2fabc6cbf2a4abf270a3d4ce22c15462f134684d2239f2aa84534cb335457"
 dependencies = [
  "risc0-zkvm-circuit-sys",
 ]
 
 [[package]]
 name = "risc0-zkvm-circuit-sys"
-version = "0.7.2"
+version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "beefe9fd047e5461a7da44fce7a1c48e2458e5d3589b3ac9921cec012487507c"
+checksum = "ea1a0a5dd5ae77624e3acb912cb749bdd4dd558fcfecec44f83f0fb2eb177aeb"
 dependencies = [
  "anyhow",
  "cxx",
@@ -332,9 +333,9 @@ dependencies = [
 
 [[package]]
 name = "risc0-zkvm-core"
-version = "0.7.2"
+version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "178aeadbe1b4aaa052d9db1b2cc7cbe9cf2b2f9f78be83080d6bc40d26ea3785"
+checksum = "91970d312fdc7993397301aa967339254efb908fbae9f67406fa545134ba1539"
 dependencies = [
  "cfg-if",
  "risc0-zkp-core",
@@ -343,9 +344,9 @@ dependencies = [
 
 [[package]]
 name = "risc0-zkvm-guest"
-version = "0.7.2"
+version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "73634172d717ed0cf8143a4c3a4f290ab47acbcb024ecd5ade53f71b8c931938"
+checksum = "c341f298a106d3bfa4a8c1395ce139d845729dbb401264e02340a09e51f7dc5c"
 dependencies = [
  "bytemuck",
  "risc0-build",
@@ -357,9 +358,9 @@ dependencies = [
 
 [[package]]
 name = "risc0-zkvm-platform-sys"
-version = "0.7.2"
+version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "038e70fa1742aecc206259aa551e2d66c688ce1b3683690a7b7147ab1d13af52"
+checksum = "b0f968c466ef99d479156f47bc5e429ff5492e188a0c4be0f5df2c5445ccfa63"
 dependencies = [
  "cxx",
  "cxx-build",
@@ -367,9 +368,9 @@ dependencies = [
 
 [[package]]
 name = "risc0-zkvm-serde"
-version = "0.7.2"
+version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4958cf8f5900bd41a1490f24bb50054d0c16106886d3e6c4266ffb2898f88852"
+checksum = "0ce22fa2397ff680dbc9623e7478d6290a5be3fc642021393e4df97a097b7bab"
 dependencies = [
  "bytemuck",
  "serde",
@@ -377,9 +378,9 @@ dependencies = [
 
 [[package]]
 name = "risc0-zkvm-sys"
-version = "0.7.2"
+version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3a95df92ee787f0c98eca866fe8bd0f0ea77faf5d37cba256007af33dddc8117"
+checksum = "87052b7fe9736110bb9632cda134bc0c5fdf600ac0bec973aab6ed3eb82366ed"
 dependencies = [
  "anyhow",
  "cxx",
