@@ -1,6 +1,5 @@
 [workspace]
 members = [
     "methods",
-    "risc0-build-methods",
     "starter",
 ]

@@ -1,7 +1,0 @@
-[package]
-name = "risc0-build-methods"
-version = "0.0.0"
-edition = "2021"
-
-[dependencies]
-risc0-build = "0.7"
