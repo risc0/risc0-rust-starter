@@ -11,6 +11,7 @@ Make sure you are using a [nightly](https://doc.rust-lang.org/book/appendix-07-n
 ```
 rustup toolchain install nightly
 rustup override set nightly
+rustup component add rust-src
 ```
 
 To build all methods and execute the method within the zkVM, run the following command:
