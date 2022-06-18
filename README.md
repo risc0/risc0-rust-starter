@@ -6,12 +6,7 @@ For more information, check out the [risc0/risc0 repository](www.github.com/risc
 
 # Quick Start
 
-Make sure you are using a [nightly](https://doc.rust-lang.org/book/appendix-07-nightly-rust.html) version of [Rust](https://doc.rust-lang.org/book/ch01-01-installation.html):
-
-```
-rustup toolchain install nightly
-rustup override set nightly
-```
+First, make sure [rustup](https://rustup.rs) is installed. This project uses a [nightly](https://doc.rust-lang.org/book/appendix-07-nightly-rust.html) version of [Rust](https://doc.rust-lang.org/book/ch01-01-installation.html), `rustup` will automatically install the correct version.
 
 To build all methods and execute the method within the zkVM, run the following command:
 
