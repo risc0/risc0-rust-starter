@@ -7,7 +7,7 @@ edition = "2021"
 path = "lib.rs"
 
 [build-dependencies]
-risc0-build = "0.9"
+risc0-build = "0.10"
 
 [package.metadata.risc0]
 methods = ["guest"]
