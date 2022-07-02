@@ -3,9 +3,6 @@ name = "methods"
 version = "0.1.0"
 edition = "2021"
 
-[lib]
-path = "lib.rs"
-
 [build-dependencies]
 risc0-build = "0.10"
 

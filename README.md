@@ -16,7 +16,7 @@ cargo run --release
 
 ## Zero-Knowledge Programs
 
-A zkVM program is composed of a `host` and a `guest`. The [host](starter/src/main.rs) code runs like any other rust program and launches a zkVM instance using the [Prover](https://docs.rs/risc0-zkvm-host/0.9.0/risc0_zkvm_host/struct.Prover.html) interface. The [guest](methods/guest/src/bin/multiply.rs) code is compiled for `riscv32im` and runs inside a zkVM. Guest code does not have access to `std` since the zkVM is similar to an embedded system. Use the [env](https://docs.rs/risc0-zkvm-guest/0.9.0/risc0_zkvm_guest/env/index.html#) in your zkVM guest code to communicate with the host.
+A zkVM program is composed of a `host` and a `guest`. The [host](starter/src/main.rs) code runs like any other rust program and launches a zkVM instance using the [Prover](https://docs.rs/risc0-zkvm-host/0.10.0/risc0_zkvm_host/struct.Prover.html) interface. The [guest](methods/guest/src/bin/multiply.rs) code is compiled for `riscv32im` and runs inside a zkVM. Guest code does not have access to `std` since the zkVM is similar to an embedded system. Use the [env](https://docs.rs/risc0-zkvm-guest/0.10.0/risc0_zkvm_guest/env/index.html) in your zkVM guest code to communicate with the host.
 
 ## Contributor's Guide
 We welcome contributions to documentation and code via [PRs and GitHub Issues](http://www.github.com/risc0).
