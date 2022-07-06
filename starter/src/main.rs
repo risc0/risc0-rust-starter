@@ -10,10 +10,10 @@ fn main() {
     // Multiply them inside the ZKP
     // First, we make the prover, loading the 'multiply' method
     let mut prover = Prover::new(&std::fs::read(MULTIPLY_PATH).unwrap(), MULTIPLY_ID).unwrap();
-    // Next we send a + b to the guest
+    // Next we send a & b to the guest
     prover.add_input(to_vec(&a).unwrap().as_slice()).unwrap();
     prover.add_input(to_vec(&b).unwrap().as_slice()).unwrap();
-    // Run prover + generate receipt
+    // Run prover & generate receipt
     let receipt = prover.run().unwrap();
 
     // Extract journal of receipt (i.e. output c, where c = a * b)
