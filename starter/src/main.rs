@@ -19,7 +19,7 @@ fn main() {
     // Extract journal of receipt (i.e. output c, where c = a * b)
     let c: u64 = from_slice(&receipt.get_journal_vec().unwrap()).unwrap();
 
-    // Print an assertation
+    // Print an assertion
     println!("I know the factors of {}, and I can prove it!", c);
 
     // Here is where one would send 'receipt' over the network...
