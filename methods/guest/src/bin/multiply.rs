@@ -14,8 +14,9 @@ pub fn main() {
     if a == 1 || b == 1 {
         panic!("Trivial factors")
     }
-    // Compute the product
-    let c: u64 = (a * b).into();
-    // Commit it to the public journal
-    env::commit(&c);
+    // Compute the product while being careful with integer overflow
+    match (a as u64).checked_mul(b as u64) {
+        Some(val) => env::commit(&val), // Commit it to the public journal
+        None => panic!("Integer overflow")
+    };
 }
