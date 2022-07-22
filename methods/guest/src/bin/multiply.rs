@@ -15,8 +15,6 @@ pub fn main() {
         panic!("Trivial factors")
     }
     // Compute the product while being careful with integer overflow
-    match (a as u64).checked_mul(b as u64) {
-        Some(val) => env::commit(&val), // Commit it to the public journal
-        None => panic!("Integer overflow")
-    };
+    let product = (a as u64).checked_mul(b as u64).expect("Integer overflow");
+    env::commit(&product);
 }
