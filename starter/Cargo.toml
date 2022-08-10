@@ -5,7 +5,8 @@ edition = "2021"
 
 [dependencies]
 methods = { path = "../methods" }
-risc0-zkvm-core = "0.10"
-risc0-zkvm-host = "0.10"
-risc0-zkvm-serde = "0.10"
+risc0-zkvm-core = "0.10.0"
+risc0-zkvm-host = "0.10.0"
+risc0-zkvm-serde = "0.10.0"
+risc0-zkvm-sys = "0.11.0-rc.3"
 serde = "1.0"
