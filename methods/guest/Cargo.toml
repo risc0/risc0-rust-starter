@@ -6,7 +6,7 @@ edition = "2021"
 [workspace]
 
 [build-dependencies]
-risc0-build = "0.10"
+risc0-build = "0.11.0-rc.3"
 
 [dependencies]
-risc0-zkvm = "0.10"
+risc0-zkvm = "0.11.0-rc.3"
