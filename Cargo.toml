@@ -1,5 +1,5 @@
 [workspace]
 members = [
     "methods",
-    "starter",
+    "project_or_component_name",
 ]
