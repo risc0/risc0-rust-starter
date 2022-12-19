@@ -5,5 +5,5 @@ edition = "2021"
 
 [dependencies]
 methods = { path = "../methods" }
-risc0-zkvm = "0.11"
+risc0-zkvm = { git = "https://github.com/risc0/risc0.git" }
 serde = "1.0"
