@@ -25,6 +25,10 @@ Search this template for the string `TODO`, and make the necessary changes to im
  * Reference documentation for our Rust crates is available at [docs.rs], including the [RISC Zero zkVM crate](https://docs.rs/risc0-zkvm), the [RISC Zero zkVM guest crate](https://docs.rs/risc0-zkvm-guest), the [RISC Zero build crate](https://docs.rs/risc0-build), and others (the full list is available at [https://github.com/risc0/risc0/blob/main/README.md]).
  * Our [main repository](https://www.github.com/risc0/risc0).
 
+## Using the latest RISC Zero code
+
+We also have an `unstable` branch with dependencies on [our latest code in the main RISC Zero GitHub repo](https://github.com/risc0/risc0) rather than stable, published crates. If you want to use our most recent changes, you can use that branch to start your project. That said, that branch is called `unstable` for a reason -- expect bugs, feature changes, and all the other challenges of working with frequently updated code if you use `unstable`.
+
 ## Contributor's Guide
 We welcome contributions to documentation and code via PRs and GitHub Issues on our [main repository](http://www.github.com/risc0), this repository, or any of our other repositories.
 
