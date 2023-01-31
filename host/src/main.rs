@@ -1,13 +1,11 @@
-// TODO: Update the name of the method loaded by the prover. E.g., if the method is `multiply`, replace `METHOD_NAME_ID` with `MULTIPLY_ID` and replace `METHOD_NAME_PATH` with `MULTIPLY_PATH`
-use methods::{METHOD_NAME_ID, METHOD_NAME_PATH};
+// TODO: Update the name of the method loaded by the prover. E.g., if the method is `multiply`, replace `METHOD_NAME_ELF` with `MULTIPLY_ELF` and replace `METHOD_NAME_ID` with `MULTIPLY_ID`
+use methods::{METHOD_NAME_ELF, METHOD_NAME_ID};
 use risc0_zkvm::Prover;
 // use risc0_zkvm::serde::{from_slice, to_vec};
 
 fn main() {
     // Make the prover.
-    let method_code = std::fs::read(METHOD_NAME_PATH)
-        .expect("Method code should be present at the specified path; did you use the correct *_PATH constant?");
-    let mut prover = Prover::new(&method_code, METHOD_NAME_ID).expect(
+    let mut prover = Prover::new(METHOD_NAME_ELF, METHOD_NAME_ID).expect(
         "Prover should be constructed from valid method source code and corresponding method ID",
     );
 
