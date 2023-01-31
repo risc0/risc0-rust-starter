@@ -13,7 +13,7 @@ fn main() {
 
     // Run prover & generate receipt
     let receipt = prover.run()
-        .expect("Code should be provable unless it 1) had an error or 2) overflowed the cycle limit. See `embed_methods_with_options` for information on adjusting maximum cycle count.");
+        .expect("Code should be provable unless it had an error or overflowed the maximum cycle count");
 
     // Optional: Verify receipt to confirm that recipients will also be able to verify your receipt
     receipt.verify(METHOD_NAME_ID).expect(
