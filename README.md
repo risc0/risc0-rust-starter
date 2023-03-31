@@ -1,5 +1,7 @@
 # RISC Zero Rust Starter Template
 
+_(This repository has been deprecated in favor of the [`cargo risczero`](https://crates.io/crates/cargo-risczero) tool's `new` command.)_
+
 Welcome to the RISC Zero Rust Starter Template! This template is intended to give you a starting point for building a project using the RISC Zero zkVM. Throughout the code are comments labelled `TODO` in places where we expect projects will need to modify the code.
 
 TODO: Replace this README with a README for your project
